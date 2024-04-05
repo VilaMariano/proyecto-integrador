@@ -209,5 +209,14 @@ input{
 }
 /*login-register-recuperar*/
 
+/*carrito*/
+.padrecarrito{
+    background-color:pink;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/*carrito*/
   
 
