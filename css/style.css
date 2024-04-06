@@ -215,8 +215,15 @@ input{
     margin: 15px;
     border-radius: 15px;
     padding: 10px;
-}
+    display: flex;
+    flex-direction: row;
 
+}
+.padrecarrito img {
+    max-width: 200px;
+    height: 300px;
+    margin: 5px;
+}
 /*carrito*/
   
 
