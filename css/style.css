@@ -17,6 +17,18 @@ li{
 a{
     text-decoration: none;
 }
+.btn2{
+    text-decoration: solid;
+    background-color:pink;
+    color:whitesmoke;
+    border-radius: 3px;
+}
+.btn3{
+    text-decoration: solid;
+    background-color:black;
+    color:whitesmoke;
+    border-radius: 3px;
+}
 
 /* Header */
 header{
@@ -225,5 +237,3 @@ input{
     margin: 5px;
 }
 /*carrito*/
-  
-
