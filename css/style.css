@@ -52,9 +52,10 @@ header nav li{
     margin: 10px;
 }
 .logoec{
-    height: 10%;
-    width: 10%;
-    margin: 0px 15px;
+    height: 30%;
+    width: 30%;
+    margin:5px;
+    border-radius: 30px;
 }
 nav a {
     text-decoration: none;
@@ -123,6 +124,7 @@ footer ul li {
     max-width: 200px;
     height: 300px;
     margin: 5px;
+    border-radius: 10px;
 }
 .articleproductos p {
     font-size: 14px;
@@ -237,3 +239,23 @@ input{
     margin: 5px;
 }
 /*carrito*/
+
+@media (max-width : 900px){
+    header nav {
+        align-items: center;
+        flex-direction:column;
+    }
+
+    header nav ul {
+        margin: 10px 0;
+        flex-direction: column;
+    }
+    .logoec{
+        height: 20%;
+        width: 20%;
+        margin:15px;
+        align-items:flex-end;
+        flex-wrap: wrap;
+    }
+
+}
