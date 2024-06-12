@@ -1,4 +1,4 @@
-let urlDetalle = 'https://fakestoreapi.com/products/1'
+let urlDetalle = `https://fakestoreapi.com/products/?${id}`
 let queryString = window.location.search ; 
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
