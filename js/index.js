@@ -1,6 +1,6 @@
 let urlProductosElectronica = 'https://fakestoreapi.com/products/category/electronics'
 
-//Electronica//
+//ELECTRONICA//
 
 fetch(urlProductosElectronica)
     .then(function(res){
@@ -19,7 +19,7 @@ fetch(urlProductosElectronica)
             <h2 class="titulosection">${arrayProductos[i].title}</h2>
             <p>${arrayProductos[i].description}</p>
             <p>${arrayProductos[i].price}</p>
-            <a href="./producto.html" class="btn2">Ver mas</a>
+            <a href="./producto.html?id=${arrayProductos[i].id}" class="btn2">Ver mas</a>
             </article>`
         }
         productos.innerHTML = productosHTML;
@@ -47,7 +47,7 @@ fetch(urlProductosJoyas)
             <h2 class="titulosection">${arrayProductos[i].title}</h2>
             <p>${arrayProductos[i].description}</p>
             <p>${arrayProductos[i].price}</p>
-            <a href="./producto.html" class="btn2">Ver mas</a>
+            <a href="./producto.html?id=${arrayProductos[i].id}" class="btn2">Ver mas</a>
             </article>`
         }
         productos.innerHTML = productosHTML;

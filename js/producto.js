@@ -1,10 +1,12 @@
+//CONTROL//
+console.log("qs: ", qs);
+console.log("quetryStringToObj: ",queryStringObj);
+console.log("id: ",id);
 
+//CODIGO//
 let qs = location.search ; 
-console.log(qs)
 let queryStringObj = new URLSearchParams(qs);
-console.log(queryStringObj)
 let id = queryStringObj.get('id');
-console.log(id)
 
 let url_detalle = `https://fakestoreapi.com/products/${id}`
 console.log(url_detalle)
