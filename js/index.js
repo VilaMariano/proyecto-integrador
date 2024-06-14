@@ -1,5 +1,3 @@
-
-let urlProductos = 'https://fakestoreapi.com/products'
 let urlProductosElectronica = 'https://fakestoreapi.com/products/category/electronics'
 
 //Electronica//
@@ -59,7 +57,9 @@ fetch(urlProductosJoyas)
     });
 
 //ROPA//
-//let urlProductosRopa = urlProductos//
+let urlProductosRopa = "https://fakestoreapi.com/products/category/men's%20clothing"
+
+
 
 
 

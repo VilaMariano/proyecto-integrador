@@ -1,11 +1,17 @@
-let urlDetalle = `https://fakestoreapi.com/products/1`
-let queryString = window.location.search ; 
-let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("id");
 
-fetch(urlDetalle)
+let qs = location.search ; 
+console.log(qs)
+let queryStringObj = new URLSearchParams(qs);
+console.log(queryStringObj)
+let id = queryStringObj.get('id');
+console.log(id)
+
+let url_detalle = `https://fakestoreapi.com/products/${id}`
+console.log(url_detalle)
+
+fetch(url_detalle)
     .then(function(res){
-    return res.json()
+        return res.json()
     })
     .then(function(data){
         console.log(data);
