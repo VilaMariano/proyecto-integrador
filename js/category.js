@@ -1,9 +1,11 @@
 // BOCETO//
+let qs = location.search ; 
+let queryStringObj = new URLSearchParams(qs);
+let id = queryStringObj.get('id');
+let urlProductosCategoria = `https://fakestoreapi.com/products/category/${id}`
 
-let urlProductosElectronica = 'https://fakestoreapi.com/products/category/electronics'
 
-
-fetch(urlProductosElectronica)
+fetch(urlProductosCategoria)
     .then(function(res){
     return res.json()
     })
