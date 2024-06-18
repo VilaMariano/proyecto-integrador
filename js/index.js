@@ -3,8 +3,8 @@ let urlProductosElectronica = 'https://fakestoreapi.com/products/category/electr
 //ELECTRONICA//
 
 fetch(urlProductosElectronica)
-    .then(function(res){
-    return res.json()
+    .then(function(response){
+    return response.json()
     })
     .then(function(data){
         console.log(data);
@@ -31,8 +31,8 @@ fetch(urlProductosElectronica)
 //JOYAS//
 let urlProductosJoyas = 'https://fakestoreapi.com/products/category/jewelery'
 fetch(urlProductosJoyas)
-    .then(function(res){
-    return res.json()
+    .then(function(response){
+    return response.json()
     })
     .then(function(data){
         console.log(data);
@@ -60,8 +60,8 @@ fetch(urlProductosJoyas)
 let urlProductosRopa = "https://fakestoreapi.com/products/category/men's%20clothing"
 
 fetch(urlProductosRopa)
-    .then(function(res){
-    return res.json()
+    .then(function(response){
+    return response.json()
     })
     .then(function(data){
         console.log(data);

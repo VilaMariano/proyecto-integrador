@@ -1,19 +1,13 @@
-//CODIGO//
+
 let qs = location.search ; 
 let queryStringObj = new URLSearchParams(qs);
 let id = queryStringObj.get('id');
 
-//CONTROL//
-console.log("qs: ", qs);
-console.log("quetryStringToObj: ",queryStringObj);
-console.log("id: ",id);
-
 let url_detalle = `https://fakestoreapi.com/products/${id}`
-console.log(url_detalle)
 
 fetch(url_detalle)
-    .then(function(res){
-        return res.json()
+    .then(function(response){
+        return response.json()
     })
     .then(function(data){
         console.log(data);
@@ -25,12 +19,32 @@ fetch(url_detalle)
             <h2 class="titulosection">${arrayProductos.title}</h2>
             <p>${arrayProductos.description}</p>
             <p>${arrayProductos.price}</p>
-            <a href="./category.html" class="btn3">${arrayProductos.category}</a>
-            <a href="./cart.html" class="btn3">AGREGAR AL CARRITO</a>
+            <a href="./category.html?id=${arrayProductos.id}" class="btn3">${arrayProductos.category}</a>
+            <a class="btncarrito" href=" ">AGREGAR AL CARRITO</a>
             </article>`
         
         productos.innerHTML = productosHTML;
+
+        let btncarrito = document.querySelector(".btncarrito");
+        if (btncarrito) {
+            btncarrito.addEventListener("click", function(e) {
+                e.preventDefault();
+                let carrito = [];
+                let recuperoStorage = localStorage.getItem('cartItems');
+                if (recuperoStorage !== null) {
+                    carrito = JSON.parse(recuperoStorage);
+                }
+                carrito.push(id);
+                let carString = JSON.stringify(carrito);
+                localStorage.setItem("cartItems", carString);
+                console.log("carrito: ", carrito);
+            });
+        }
     })
     .catch(function(error){
         console.log("EL error es: " + error);
     });
+
+ 
+    
+    

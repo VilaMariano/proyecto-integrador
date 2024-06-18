@@ -6,8 +6,8 @@ let urlProductosCategoria = `https://fakestoreapi.com/products/category/${id}`
 
 
 fetch(urlProductosCategoria)
-    .then(function(res){
-    return res.json()
+    .then(function(response){
+    return response.json()
     })
     .then(function(data){
         console.log(data);
