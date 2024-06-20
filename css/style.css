@@ -201,7 +201,7 @@ footer ul li {
     align-items: center;
     min-height: 100vh;
 }
-.formulariologin {
+.formulario-login {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ footer ul li {
     box-shadow: #f4f4f4;
     text-align: center;
 }
-.formulariologin h2{
+.formulario-login h2{
     font-size: 30px;
     color: white;
     margin-bottom: 35px;
@@ -219,7 +219,7 @@ footer ul li {
     margin: 12px;
     background-color: purple;
 }
-.formulariologin a {
+.formulario-login a {
     color: gray;
     margin: 12px;
 }
@@ -233,7 +233,7 @@ input{
     color: white;
     font-size: 16px;
 }
-.formulariologin label {
+.formulario-login label {
     color: white;
     margin: 12px;
 }
