@@ -17,17 +17,23 @@
                 <li><a href="./category.html?id=men's%20clothing">HOMBRE</a></li>
                 <li><a href="./category.html?id=women's%20clothing">MUJER</a></li>
                 <li><a href="./cart.html">CARRITO</a></li>
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTER</a></li>
+                <li><a class="login-header" href="./login.html">LOGIN</a></li>
+                <li><a class="register-header" href="./register.html">REGISTER</a></li>
+                <li><a class="logout" href="#">LOGOUT</a></li>
             </ul>
         </nav>
+        <p id="saludo"></p>
     </header>
     <section class="secformulariologin">
-        <form action="" method="" class="formulariologin">
+        <form action="" method="" class="formulario-login">
             <h2>RECOVER</h2>
-            <input type="email" placeholder="Email">
+            <input class="mail" type="email" placeholder="Email" value="">
+            <p class = "avisom">Por favor escriba su mail</p>
             <button type="submit" class="btn">Recuperar</button>
-            <label><input type="checkbox">Quiero recuperar mi contraseña</label>
+            <label><input class="caja" type="checkbox" value="no">Quiero recuperar mi contraseña</label>
+            <p class="avisoc">Por favor acepte el campo "Quiero recuperar mi contraseña"</p>
+            <p class="aviso">Recibiras un email con las instrucciones para recuperar tu contraseña</p>
+            <a class="link-login" href="./login.html">In a login</a>
         </form>
     </section>
     <footer>
@@ -37,5 +43,7 @@
         </ul>
     </footer>
 <script src="./js/recover.js"></script>
+<script src="./js/saludo.js"></script>
+<script src="./js/logout.js"></script>
 </body>
 </html>

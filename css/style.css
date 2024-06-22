@@ -237,6 +237,26 @@ input{
     color: white;
     margin: 12px;
 }
+.a{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.b{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.c{
+    display: none;
+    color: red;
+    justify-content: center;
+}
+.d{
+    display: none;
+    color: red;
+    justify-content: center;
+}
 /*login-register-recuperar*/
 
 /*carrito*/

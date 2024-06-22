@@ -1,6 +1,6 @@
 let formulario = document.querySelector(".formulario-login")
-let email = document.querySelector(".email");
-let contra = document.querySelector(".password");
+let email = document.querySelector("#email");
+let contra = document.querySelector("#password");
 
 formulario.addEventListener("submit",function(e){
     e.preventDefault()

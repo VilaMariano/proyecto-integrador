@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header>
     <header>
         <nav>
             <a href="./index.html"><img src="./Img/logoec.jpg" alt="logo" class="logoec"></a>
@@ -18,16 +17,18 @@
                 <li><a href="./category.html?id=men's%20clothing">HOMBRE</a></li>
                 <li><a href="./category.html?id=women's%20clothing">MUJER</a></li>
                 <li><a href="./cart.html">CARRITO</a></li>
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTER</a></li>
+                <li><a class="login-header" href="./login.html">LOGIN</a></li>
+                <li><a class="register-header" href="./register.html">REGISTER</a></li>
+                <li><a class="logout" href="#">LOGOUT</a></li>
             </ul>
         </nav>
+        <p id="saludo"></p>
     </header>
 <section class="secformulariologin">
     <form action="" method="" class="formulario-login">
         <h2>LOGIN</h2>
-        <input class= "email" type="email" placeholder="Email" value="">
-        <input class="password" type="password" placeholder="Contraseña" value="">
+        <input id= "email" type="email" placeholder="Email" value="">
+        <input id="password" type="password" placeholder="Contraseña" value="">
         <button type="submit" class="btn">Ingresar</button>
         <a href="./register.html">No tengo cuenta</a>
         <a href="./recover.html">Recuperar contraseña</a>
@@ -40,5 +41,7 @@
         </ul>
 </footer>
 <script src="./js/login.js"></script>
+<script src="./js/saludo.js"></script>
+<script src="./js/logout.js"></script>
 </body>
 </html>

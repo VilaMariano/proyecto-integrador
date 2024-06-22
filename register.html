@@ -17,17 +17,23 @@
                 <li><a href="./category.html?id=men's%20clothing">HOMBRE</a></li>
                 <li><a href="./category.html?id=women's%20clothing">MUJER</a></li>
                 <li><a href="./cart.html">CARRITO</a></li>
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTER</a></li>
+                <li><a class="login-header" href="./login.html">LOGIN</a></li>
+                <li><a class="register-header" href="./register.html">REGISTER</a></li>
+                <li><a class="logout" href="#">LOGOUT</a></li>
             </ul>
         </nav>
+        <p id="saludo"></p>
     </header>
     <section class="secformulariologin">
-        <form action="" method="" class="formulariologin">
+        <form action="" method="" class="formulario-login">
             <h2>REGISTER</h2>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Repetir contraseña"> 
+            <input class="email" type="email" placeholder="Email" value="">
+            <p class="a">Por favor complete el campo</p>
+            <input class="contra" type="password" placeholder="Contraseña" value="">
+            <p class="b">Por favor complete el campo</p>
+            <p class="c">Debe ingresar al menos 6 caracteres</p>
+            <input class="reccontra" type="password" placeholder="Repetir contraseña" value=""> 
+            <p class="d">Las contraseñas no coinciden</p>
             <button type="submit" class="btn">Registrarme</button>
             <label><input type="checkbox">Terminos y condiciones</label>
             <a href="./login.html">Ya tengo cuenta</a>
@@ -39,6 +45,8 @@
             <li class="footerlist">Haidar El Khechen</li>
         </ul>
     </footer>
-<script src="./js/register.js"></script>
+<script src="./js/recover.js"></script>
+<script src="./js/saludo.js"></script>
+<script src="./js/logout.js"></script>
 </body>
 </html>
