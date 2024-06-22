@@ -19,7 +19,7 @@ fetch(url_detalle)
             <h2 class="titulosection">${arrayProductos.title}</h2>
             <p>${arrayProductos.description}</p>
             <p>${arrayProductos.price}</p>
-            <a href="./category.html?id=${arrayProductos.id}" class="btn3">${arrayProductos.category}</a>
+            <a href="./category.html?id=${arrayProductos.category}" class="btn3">${arrayProductos.category}</a>
             <a class="btncarrito" href=" ">AGREGAR AL CARRITO</a>
             </article>`
         

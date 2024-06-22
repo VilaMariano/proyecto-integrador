@@ -15,5 +15,6 @@ formulario.addEventListener("submit",function(e){
         formulario.submit();
         let emailString = JSON.stringify(email.value);
         localStorage.setItem("Email:",emailString);
+        window.location.href = 'index.html';
     }
 })
